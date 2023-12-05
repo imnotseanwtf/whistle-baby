@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whistle</title>
 </head>
 
 <style>
     body {
-        background-image: url('whistlebaby.jpg');
+        background-image: url("whistlebaby.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
         overflow: hidden;
         margin: 0;
     }
@@ -31,18 +30,25 @@
     }
 
     @media (max-width: 600px) {
+        body {
+            background-size: 120% 190%;
+        }
+
         .container {
-            width: 90%;
-            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            max-width: 500px;
+            margin: 200px auto 20px;
         }
     }
 </style>
 
 <body>
     <div class="container">
-        <iframe style="border-radius:12px"
+        <iframe style="border-radius: 12px"
             src="https://open.spotify.com/embed/playlist/7bFbgnuynFyqJtayJk5CuP?utm_source=generator" width="100%"
-            height="352" frameBorder="0" allowfullscreen=""
+            height="352" frameborder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 </body>
