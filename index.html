@@ -8,20 +8,33 @@
 </head>
 
 <style>
-    .container {
-        display: flex;
-        justify-content: center;
-        width: 500px;
-        margin: 0 auto;
-        margin-top: 200px;
-    }
-
     body {
         background-image: url('whistlebaby.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         overflow: hidden;
         margin: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        max-width: 500px;
+        margin: 200px auto 20px;
+    }
+
+    iframe {
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            width: 90%;
+            margin-top: 100px;
+        }
     }
 </style>
 
